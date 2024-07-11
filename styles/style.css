@@ -93,7 +93,8 @@ main {
     padding:  6.8rem 7.1rem;
     margin-bottom: 5.6rem;
 
-    background: url("/assets/images/other/promo.jpeg") no-repeat;
+    background-image: url("../assets/images/other/promo.jpeg");
+    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 
