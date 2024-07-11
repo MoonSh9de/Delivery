@@ -93,7 +93,8 @@ main {
     padding:  6.8rem 7.1rem;
     margin-bottom: 5.6rem;
 
-    background: url("assets/images/other/promo.svg") no-repeat;
+    background: url("/assets/images/other/promo.jpeg") no-repeat;
+    background-position: center;
     background-size: cover;
 
     color: #302C34;
