@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Delivery</title>
         <link rel="stylesheet" href="styles/style.css">
+        <script src="scripts/index.js" defer></script>
     </head>
     <body>
         <!--Header-->
@@ -14,8 +15,8 @@
                     <img src="assets/images/other/logo.svg" alt="#logo">
                 </a>
                 <div class="header__btns">
-                    <a href="#" class="btn btn__primary "><img src="assets/images/other/user.svg" alt="">Войти</a>
-                    <a href="#" class="btn btn__outline"><img src="assets/images/other/shopping-cart-header.svg" alt="">Корзина</a>
+                    <a href="#" class="btn btn__primary"><img src="assets/images/other/user.svg" alt="">Войти</a>
+                    <a href="#" class="btn btn__outline" id="btn__cart"><img src="assets/images/other/shopping-cart-header.svg" alt="">Корзина</a>
                 </div>
             </div>  
         </header>
@@ -39,9 +40,9 @@
                         </form>
                     </div>
 
-                    <div class="delivery__restaraunts">
+                    <div class="delivery__restaraunts" id="rests">
                         <!-- restaraunt -->
-                        <a href="goods.html" class="restaraunt">
+                        <!-- <a href="goods.html" class="restaraunt">
                             <div class="restaraunt__image">
                                 <img src="assets/images/rests/pizza_plus.jpg" alt="">
                             </div>
@@ -56,9 +57,9 @@
                                     <p class="price">От<span class="cost">900</span>₽<img class="dot" src="assets/images/other/dot.svg" alt=""><span class="dish">Пицца</span></p>
                                 </div>
                             </div>
-                        </a>
+                        </a> -->
                         <!-- restaraunt -->
-                        <a href="goods.html" class="restaraunt">
+                        <!-- <a href="goods.html" class="restaraunt">
                             <div class="restaraunt__image">
                                 <img src="assets/images/rests/tanuki.jpg" alt="">
                             </div>
@@ -73,9 +74,9 @@
                                     <p class="price">От<span class="cost">900</span>₽<img class="dot" src="assets/images/other/dot.svg" alt=""><span class="dish">Пицца</span></p>
                                 </div>
                             </div>
-                        </a>
+                        </a> -->
                         <!-- restaraunt -->
-                        <a href="goods.html" class="restaraunt">
+                        <!-- <a href="goods.html" class="restaraunt">
                             <div>
                                 <img class="restaraunt__image" src="assets/images/rests/food_band.jpg" alt="">
                             </div>
@@ -90,9 +91,9 @@
                                     <p class="price">От<span class="cost">900</span>₽<img class="dot" src="assets/images/other/dot.svg" alt=""><span class="dish">Пицца</span></p>
                                 </div>
                             </div>
-                        </a>
+                        </a> -->
                         <!-- restaraunt -->
-                        <a href="goods.html" class="restaraunt">
+                        <!-- <a href="goods.html" class="restaraunt">
                             <div>
                                 <img class="restaraunt__image" src="assets/images/rests/jadina_pizza.jpg" alt="">
                             </div>
@@ -107,9 +108,9 @@
                                     <p class="price">От<span class="cost">900</span>₽<img class="dot" src="assets/images/other/dot.svg" alt=""><span class="dish">Пицца</span></p>
                                 </div>
                             </div>
-                        </a>
+                        </a> -->
                         <!-- restaraunt -->
-                        <a href="goods.html" class="restaraunt">
+                        <!-- <a href="goods.html" class="restaraunt">
                             <div>
                                 <img class="restaraunt__image" src="assets/images/rests/tochka_edi.jpg" alt="">
                             </div>
@@ -124,10 +125,10 @@
                                     <p class="price">От<span class="cost">900</span>₽<img class="dot" src="assets/images/other/dot.svg" alt=""><span class="dish">Пицца</span></p>
                                 </div>
                             </div>
-                        </a>
+                        </a> -->
 
                         <!-- restaraunt -->
-                        <a href="goods.html" class="restaraunt">
+                        <!-- <a href="goods.html" class="restaraunt">
                             <div>
                                 <img class="restaraunt__image" src="assets/images/rests/pizza_burger.jpg" alt="">
                             </div>
@@ -142,17 +143,19 @@
                                     <p class="price">От<span class="cost">900</span>₽<img class="dot" src="assets/images/other/dot.svg" alt=""><span class="dish">Пицца</span></p>
                                 </div>
                             </div>
-                        </a>
+                        </a> -->
                     </div>
                 </section>
             </div>
 
         </main>
+  
+        <!-- Modal window -->
         <div class="cart-modal__overlay">
             <div class="cart-modal">
                 <div class="cart-modal__header">
                     <h2 class="cart-modal__title">Корзина</h2>
-                    <span class="cart-modal__close"><img src="/assets/images/other/close.svg" alt=""></span>
+                    <span class="cart-modal__close"><img src="assets/images/other/close.svg" alt=""></span>
                 </div>
                 <div class="cart-modal__body">
                     <div class="cart-item">
@@ -174,7 +177,6 @@
                             <button>+</button>
                         </div>
                     </div>
-                    
                 </div>
                 <div class="cart-modal__footer">
                     <p class="cart-modal__footer--price info-black">1250 ₽</p>
@@ -186,6 +188,7 @@
 
             </div>
         </div>
+        
         <!--Footer-->
         <footer class="footer">
             <div class="container container--footer">
@@ -216,6 +219,5 @@
                 </div>
             </div>
         </footer>
-
     </body>
 </html>

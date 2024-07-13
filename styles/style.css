@@ -19,6 +19,8 @@ html {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 1rem;
+
+    box-sizing: border-box;
 }
 
 li {
@@ -180,7 +182,7 @@ main {
 .delivery__restaraunts {
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 1.3rem;
     flex-wrap: wrap;
     padding-bottom: 6rem;
     text-decoration: none;
@@ -341,7 +343,7 @@ footer {
 .goods {
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 1.4rem;
 
     flex-wrap: wrap;
 

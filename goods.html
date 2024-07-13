@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Ресторан</title>
         <link rel="stylesheet" href="styles/style.css">
+        <script src="scripts/index.js" defer></script>
     </head>
     <body>
 
@@ -16,7 +17,7 @@
                 </a>
                 <div class="header__btns">
                     <a href="#" class="btn btn__primary "><img src="assets/images/other/user.svg" alt="">Войти</a>
-                    <a href="#" class="btn btn__outline"><img src="assets/images/other/shopping-cart-header.svg" alt="">Корзина</a>
+                    <a href="#" class="btn btn__outline" id="btn__cart"><img src="assets/images/other/shopping-cart-header.svg" alt="">Корзина</a>
                 </div>
             </div>  
         </header>
@@ -24,7 +25,7 @@
         <!--main-->
         <main class="main">
             <section class="container">
-                <div class="restaraunt__info restaraunt__info--goods">
+                <div class="restaraunt__info restaraunt__info--goods" id = "goodsTitle">
                     <h1 class="restaraunt__title restaraunt__title--goods">Тануки</h1>
                     <div class="raiting">
                         <img class="star_img" src="assets/images/other/star.svg" alt="">
@@ -33,9 +34,9 @@
                     </div>
                 </div>
 
-                <section class="goods">
+                <section class="goods" id="goods">
                     <!-- Good -->
-                    <div class="good">
+                    <!-- <div class="good">
                         <div>
                             <img class="good__image" src="assets/images/goods/roll_eel_standart.jpg" alt="">
                         </div>
@@ -47,10 +48,10 @@
                                 <p class="good__price">250 ₽</p>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
                      <!-- Good -->
-                     <div class="good">
+                     <!-- <div class="good">
                         <div>
                             <img class="good__image" src="assets/images/goods/kalifornia_standart.jpg" alt="">
                         </div>
@@ -62,10 +63,10 @@
                                 <p class="good__price">395 ₽</p>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     
                      <!-- Good -->
-                     <div class="good">
+                     <!-- <div class="good">
                         <div>
                             <img class="good__image" src="assets/images/goods/okinava_standart.jpg" alt="">
                         </div>
@@ -77,10 +78,10 @@
                                 <p class="good__price">250 ₽</p>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
                      <!-- Good -->
-                     <div class="good">
+                     <!-- <div class="good">
                         <div>
                             <img class="good__image" src="assets/images/goods/cezar_maki_xl.jpg" alt="">
                         </div>
@@ -92,10 +93,10 @@
                                 <p class="good__price">250 ₽</p>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
                      <!-- Good -->
-                     <div class="good">
+                     <!-- <div class="good">
                         <div>
                             <img class="good__image" src="assets/images/goods/yasai_maki_standart.jpg" alt="">
                         </div>
@@ -107,10 +108,10 @@
                                 <p class="good__price">250 ₽</p>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
                      <!-- Good -->
-                     <div class="good">
+                     <!-- <div class="good">
                         <div>
                             <img class="good__image" src="assets/images/goods/roll_shrimp_standart.jpg" alt="">
                         </div>
@@ -122,11 +123,50 @@
                                 <p class="good__price">250 ₽</p>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
                 </section>
             </div>
         </main>
+
+        <!-- Modal window -->
+        <div class="cart-modal__overlay">
+            <div class="cart-modal">
+                <div class="cart-modal__header">
+                    <h2 class="cart-modal__title">Корзина</h2>
+                    <span class="cart-modal__close"><img src="assets/images/other/close.svg" alt=""></span>
+                </div>
+                <div class="cart-modal__body">
+                    <div class="cart-item">
+                        <h3 class="cart_item__title">Ролл угорь стандарт</h3>
+                        <div class="cart-item__controls">
+                            <p class="cart-item__price good__price">250 ₽</p>
+                            <button>-</button>
+                            <p class="cart-item__control--count">1</p>
+                            <button>+</button>
+                        </div>
+                    </div>
+
+                    <div class="cart-item">
+                        <h3 class="cart_item__title">Ролл угорь стандарт</h3>
+                        <div class="cart-item__controls">
+                            <p class="cart-item__price good__price">250 ₽</p>
+                            <button>-</button>
+                            <p class="cart-item__control--count">1</p>
+                            <button>+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-modal__footer">
+                    <p class="cart-modal__footer--price info-black">1250 ₽</p>
+                    <div class="cart-modal__footer--controls">
+                        <button class="btn btn__primary ">Оформить заказ</button>
+                        <button class="btn btn__outline ">Отмена</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
 
          <!--Footer-->
          <footer class="footer">
