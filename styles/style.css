@@ -18,6 +18,7 @@ html {
 .container {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 1rem;
 }
 
 li {
@@ -134,6 +135,8 @@ main {
 .delivery__about {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
     flex-wrap: wrap;
 
     margin-bottom: 4.4rem;
@@ -176,7 +179,8 @@ main {
 /*restaraunt*/
 .delivery__restaraunts {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 1rem;
     flex-wrap: wrap;
     padding-bottom: 6rem;
     text-decoration: none;
@@ -199,7 +203,7 @@ main {
     transition: all 0.2s linear;
 }
 .restaraunt:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .restaraunt__image {
@@ -336,7 +340,9 @@ footer {
 
 .goods {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 1rem;
+
     flex-wrap: wrap;
 
     padding-bottom: 11.2rem;
@@ -464,6 +470,8 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
 
 .cart-modal__footer--controls {
